@@ -8,6 +8,6 @@ int main(void)
 {
 	char cit[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	fwrite(cit, sizeof(cit), 1, stdout);
+	fwrite(cit, sizeof(cit), 1, stderr);
 	return (1);
 }
