@@ -7,15 +7,15 @@
  */
 void print_times_table(int n)
 {
-	if (n > 0 && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		int i, j, resultat;
 
-		for (i = 0; i < n+1; i++)
+		for (i = 0; i < n + 1; i++)
 		{
 			_putchar('0');
 			_putchar(',');
-			for (j = 1; j < n+1; j++)
+			for (j = 1; j < n + 1; j++)
 			{
 				resultat = i * j;
 				if (resultat < 10)
