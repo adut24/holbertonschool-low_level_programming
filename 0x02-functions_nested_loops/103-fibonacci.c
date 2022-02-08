@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int term1, term2, term_n, i, addition;
+	int term1, term2, term_n, addition;
 
 	term1 = 1;
 	term2 = 2;
 	term_n = term1 + term2;
-	for (i = 3; i < 33; i++)
+	while (addition < 4000000)
 	{
 		term1 = term2;
 		term2 = term_n;
