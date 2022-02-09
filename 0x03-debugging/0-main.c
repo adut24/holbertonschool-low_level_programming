@@ -6,8 +6,10 @@
  */
 int main(void)
 {
-	i = 0;
+	int chiffre;
 
-	positive_or_negative(0);
+	chiffre = 0;
+
+	positive_or_negative(chiffre);
 	return (0);
 }
