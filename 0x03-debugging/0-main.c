@@ -9,7 +9,6 @@ int main(void)
 	int chiffre;
 
 	chiffre = 0;
-
 	positive_or_negative(chiffre);
 	return (0);
 }
