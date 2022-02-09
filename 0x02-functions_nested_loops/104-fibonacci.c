@@ -25,7 +25,7 @@ int main(void)
 	t1D = t1 % 10000000000;
 	t2G = t2 / 10000000000;
 	t2D = t2 % 10000000000;
-	for (i = 93; i < 99; i++)
+	for (i = 93; i < 100; i++)
 	{
 		tNG = t1G + t2G;
 		tND = t1D + t2D;
@@ -35,7 +35,7 @@ int main(void)
 			tND %= 10000000000;
 		}
 		printf("%lu%lu", tNG, tND);
-		if (i != 98)
+		if (i != 99)
 		{
 			printf(", ");
 		}
