@@ -6,32 +6,43 @@
  */
 int main(void)
 {
-	unsigned long term1, term2, term_n, part1, part2;
+	unsigned long t1, t2, tN, t1G, t1D, t2G, t2D, tNG, tND;
 	int i;
 
-	term1 = 1;
-	term2 = 2;
-	term_n = term1 + term2;
-	printf("%lu, %lu, ", term1, term2);
-	for (i = 3; i < 99; i++)
+	t1 = 1;
+	t2 = 2;
+	t1G = t1D = t2G = t2D = tNG = tND = 0;
+	tN = t1 + t2;
+	printf("%lu, %lu, ", t1, t2);
+	for (i = 3; i < 93; i++)
 	{
-		part1 = term_n / 2;
-		part2 = term_n / 2;
-		if (term_n % 2 != 0)
+		printf("%lu, ", tN);
+		t1 = t2;
+		t2 = tN;
+		tN = t1 + t2;
+	}
+	t1G = t1 / 10000000000;
+	t1D = t1 % 10000000000;
+	t2G = t2 / 10000000000;
+	t2D = t2 % 10000000000;
+	for (i = 93; i < 99; i++)
+	{
+		tNG = t1G + t2G;
+		tND = t1D + t2D;
+		if (tND > 999999999)
 		{
-			printf("%lu", part1 + part2 + 1);
+			tNG++;
+			tND %= 10000000000;
 		}
-		else
-		{
-			printf("%lu", part1 + part2);
-		}
-		term1 = term2;
-		term2 = term_n;
-		term_n = term1 + term2;
+		printf("%lu%lu", tNG, tND);
 		if (i != 98)
 		{
 			printf(", ");
 		}
+		t1G = t2G;
+		t1D = t2D;
+		t2G = tNG;
+		t2D = tND;
 	}
 	printf("\n");
 	return (0);
