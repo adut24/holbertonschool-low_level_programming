@@ -17,7 +17,8 @@ int _strlen(char *s)
 	return (length);
 }
 /**
- * @brief
+ * rev_string - reverse the string
+ * @s: string
  *
  */
 void rev_string(char *s)
