@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - print n elements of integers
- * @a:
- * @n:
+ * @a: array
+ * @n: number of cases of the array
  *
  */
 void print_array(int *a, int n)
