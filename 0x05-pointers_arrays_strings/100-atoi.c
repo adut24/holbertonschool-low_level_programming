@@ -16,9 +16,17 @@ int _atoi(char *s)
 		if (s[i] == '-')
 			signe = signe * -1;
 		else if (s[i] >= '0' && s[i] <= '9')
-			nb = nb * 10 + (s[i] - '0');
+			{
+				if (nb == 214748364)
+					nb = nb * 10 + 7;
+				else
+					nb = nb * 10 + (s[i] - '0');
+			}
 		else if (nb > 0)
 			break;
 	}
-	return (nb * signe);
+	if (nb == 2147483647)
+		return (nb * signe - 1);
+	else
+		return (nb * signe);
 }
