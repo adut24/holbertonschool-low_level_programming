@@ -4,7 +4,7 @@
  * @s1: string one
  * @s2: string two
  *
- * Return:
+ * Return: gap between the ASCII value of the two characters
  */
 int _strcmp(char *s1, char *s2)
 {
