@@ -31,7 +31,7 @@ void print_buffer(char *b, int size)
 			else
 				printf(".");
 			count++;
-			if (count % 10 == 0)
+			if (count % 10 == 0 && i != size - 1)
 			{
 				printf("\n");
 				printf("%08x: ", count);
