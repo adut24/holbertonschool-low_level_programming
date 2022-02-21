@@ -5,7 +5,7 @@
  * @b: character to fill
  * @n: number of bytes to modify
  *
- * Return: modified
+ * Return: modified array s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
