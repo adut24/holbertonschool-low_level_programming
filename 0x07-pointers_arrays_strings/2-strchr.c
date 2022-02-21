@@ -14,6 +14,6 @@ char *_strchr(char *s, char c)
 			break;
 	}
 	if (!*s && c)
-		return(0);
+		return (0);
 	return (s);
 }
