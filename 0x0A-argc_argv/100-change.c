@@ -11,8 +11,6 @@ int main(int argc, char **argv)
 {
 	int nb1, nb2 = 0;
 
-	if (atoi(argv[1]) < 0)
-		printf("0\n");
 	if (argc != 2)
 	{
 		printf("Error\n");
