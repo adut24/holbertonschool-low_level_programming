@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	nb1 = atoi(argv[1]);
-	while (nb1 != 0)
+	while (nb1 > 0)
 	{
 		if (nb1 >= 25)
 		{
