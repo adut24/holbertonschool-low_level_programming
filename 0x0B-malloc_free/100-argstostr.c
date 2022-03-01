@@ -23,13 +23,13 @@ int _strlen(char *s)
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, length;
+	int i, j, length = 0;
 	char *str, *tmp;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
-		length += _strlen(av[i]);
+		length += _strlen(av[i]) + 1;
 	str = malloc(length * sizeof(char) + 1);
 	if (str == NULL)
 		return (NULL);
