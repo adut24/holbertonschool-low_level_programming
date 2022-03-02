@@ -42,7 +42,7 @@ Print all possible different combinations of two two-digits:
 * numbers should range from 0 to 99
 * the two numbers should be separated by a space
 * numbers should be printed with two digits
-* separated by `, `
+* separated by `,` and a space
 * in ascending order
 * `00 01` and `01 00` are considered as the same combination
 * using `putchar` eight times maximum
