@@ -49,6 +49,8 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	nb = number_words(str);
+	if (nb == 0)
+		return (NULL);
 	s = malloc((nb + 1) * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
