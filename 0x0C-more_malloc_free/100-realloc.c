@@ -48,7 +48,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	p = malloc(old_size + (new_size - old_size));
 	if (p == NULL)
 		return (NULL);
-	_memcpy(p, ptr, old_size + (new_size - old_size));
+	_memcpy(p, ptr, old_size);
 	free(ptr);
 	return (p);
 }
