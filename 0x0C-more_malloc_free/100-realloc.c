@@ -3,8 +3,8 @@
 /**
  * _realloc - reallocate a block of memory
  * @ptr: pointer to reallocate
- * @old_size: old size of the content of the pointer
- * @new_size: new size of the content of the pointer
+ * @old_size: old size of the content
+ * @new_size: new size of the content
  *
  * Return: pointer
  */
@@ -27,11 +27,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		p = malloc(new_size);
 		if (p == NULL)
 			return (NULL);
-		for (i = 0; i < new_size - 1; i++)
+		for (i = 0; i <= new_size; i++)
 		{
 			p[i] = ((char *)ptr)[i];
 		}
-		p[i] = '\0';
 		free(ptr);
 		return (p);
 	}
