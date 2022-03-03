@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * realloc -
+ * _realloc - reallocate a block of memory
  * @ptr: pointer to reallocate
- * @old_size:
- * @new_size:
+ * @old_size: old size of the pointer
+ * @new_size: new size of the pointer
  *
  * Return: pointer
  */
