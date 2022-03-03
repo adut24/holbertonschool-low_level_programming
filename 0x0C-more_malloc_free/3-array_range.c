@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * array_range - print an array going from min to max
  * @min: integer
@@ -9,16 +10,14 @@
  */
 int *array_range(int min, int max)
 {
-	int *ar, *tmp, i;
+	int *ar, i;
 
 	if (min > max)
 		return (NULL);
-	ar = malloc((max - min) * sizeof(int));
+	ar = malloc((max - min + 1) * sizeof(int));
 	if (ar == NULL)
 		return (NULL);
-	tmp = ar;
-	for (i = 0; i <= (max - min); i++)
+	for (i = 0; i <= max - min; i++)
 		ar[i] = min + i;
-	ar = tmp;
 	return (ar);
 }
