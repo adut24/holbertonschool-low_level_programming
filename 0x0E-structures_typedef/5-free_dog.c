@@ -1,15 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * @brief
- *
+ * free_dog - free the dog structure
+ * @d: dog to free
  */
 void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		free(d->name);
-		free(d->owner);
-		free(d);
-	}
+	free(d->name);
+	free(d->owner);
+	free(d);
 }
