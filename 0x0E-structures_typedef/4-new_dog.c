@@ -8,32 +8,38 @@
  */
 int _strlen(char *s)
 {
-	int length;
+	int i = 0;
 
-	length = 0;
-	while (s[length] != '\0')
+	while (s[i] != '\0')
 	{
-		length++;
+		i++;
 	}
-	return (length);
+	return (i);
 }
 /**
- * *_strcpy - copy a string
- * @dest: destination of the string
- * @src: source of the string
+ * *_strdup - copy a string
+ * @str: string to copy
  *
- * Return: string to copy
+ * Return: NULL or pointer to the copy
  */
-char *_strcpy(char *dest, char *src)
+char *_strdup(char *str)
 {
-	int i, length;
+	int length, i;
+	char *s;
 
-	length = _strlen(src);
-	for (i = 0; i <= length; i++)
+	if (str == NULL)
+		return (NULL);
+	length = _strlen(str);
+	s = malloc(length * sizeof(char) + 1);
+	if (s == NULL)
+		return (NULL);
+	for (i = 0; i < length; i++)
 	{
-		dest[i] = src[i];
+		s[i] = *str;
+		str++;
 	}
-	return (dest);
+	s[i] = '\0';
+	return (s);
 }
 /**
  * new_dog - create a new dog
@@ -53,7 +59,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new->name = name;
 	new->age = age;
 	new->owner = owner;
-	_strcpy(copy_name, name);
-	_strcpy(copy_owner, owner);
+	copy_name = _strdup(name);
+	copy_owner = _strdup(owner);
 	return (new);
 }
