@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * main - Entry point
  * @argc: number of arguments
@@ -16,7 +17,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	ptr = get_op_func(argv[2]);
-	if (ptr == NULL)
+	if (ptr == NULL || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
