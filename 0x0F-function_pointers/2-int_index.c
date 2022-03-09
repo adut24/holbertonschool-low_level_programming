@@ -18,10 +18,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			comp = (*cmp)(*array);
 			if (comp != 0)
-				break;
+				return (i);
 		}
-		if (i == size)
-			return (-1);
 	}
-	return (i);
+	return (-1);
 }
