@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	}
 	for (i = 0; i < nb; i++, str++)
 	{
-		printf("%02x", *str & 0xff);
+		printf("%02hhx", *str);
 		if (i != nb - 1)
 			printf(" ");
 		else
