@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 /**
- * ptiny_strings - print the strings passed as parameters
+ * print_strings - print the strings passed as parameters
  * @separator: string put between the parameters
  * @n: number of string parameters to print
  */
