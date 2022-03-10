@@ -6,40 +6,42 @@
  */
 void print_all(const char * const format, ...)
 {
-	char *str, *separator;
-	int i = 0;
-	va_list ptr;
-
-	separator = "";
-	va_start(ptr, format);
-	while (format[i] != '\0')
+	if (format != NULL)
 	{
-		switch (format[i])
+		char *str, *separator;
+		int i = 0;
+		va_list ptr;
+
+		separator = "";
+		va_start(ptr, format);
+		while (format[i] != '\0')
 		{
-			case 'c':
-				printf("%s%c", separator, va_arg(ptr, int));
-			break;
-			case 'i':
-				printf("%s%d", separator, va_arg(ptr, int));
-			break;
-			case 'f':
-				printf("%s%f", separator, va_arg(ptr, double));
-			break;
-			case 's':
-				str = va_arg(ptr, char *);
-				if (str == NULL)
-					printf("%s(nil)", separator);
-				if (str != NULL)
+			switch (format[i])
+			{
+				case 'c':
+					printf("%s%c", separator, va_arg(ptr, int));
+				break;
+				case 'i':
+					printf("%s%d", separator, va_arg(ptr, int));
+				break;
+				case 'f':
+					printf("%s%f", separator, va_arg(ptr, double));
+				break;
+				case 's':
+					str = va_arg(ptr, char *);
+					if (str == NULL)
+						str = "(nil)";
 					printf("%s%s", separator, str);
-			break;
-			default:
-				i++;
-				continue;
-			break;
+				break;
+				default:
+					i++;
+					continue;
+				break;
+			}
+			i++;
+			separator = ", ";
 		}
-		i++;
-		separator = ", ";
+		va_end(ptr);
 	}
 	printf("\n");
-	va_end(ptr);
 }
