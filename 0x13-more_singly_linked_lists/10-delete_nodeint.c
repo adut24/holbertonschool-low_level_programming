@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  * delete_nodeint_at_index - delete a node at a given index
  * @head: linked list
@@ -32,7 +32,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temp = node->next;
 	node->next = node->next->next;
 	node = temp;
-	printf("ok\n");
 	free(node);
 	return (1);
 }
