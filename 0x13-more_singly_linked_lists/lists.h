@@ -4,6 +4,18 @@
 #include <stdlib.h>
 
 /**
+ * struct address - singly linked list
+ * @a: address
+ * @next: points to the next node
+ * Description: singly linked list node structure
+ */
+typedef struct address
+{
+	void *a;
+	struct address *next;
+} add_t;
+
+/**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
