@@ -4,7 +4,7 @@
  * flip_bits - find the number of bit different between n and m
  * @n: unsigned long
  * @m: unsigned long
- * Return:
+ * Return: number of bits different
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
