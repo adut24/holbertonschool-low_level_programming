@@ -24,8 +24,6 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	fd2 = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (!buffer)
-		return (0);
 	while ((nb = read(fd1, buffer, 1024)) > 0)
 	{
 		w_suc = write(fd2, buffer, nb);
