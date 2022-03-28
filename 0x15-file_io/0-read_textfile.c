@@ -8,7 +8,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t i;
+	size_t nb;
 	char *buffer;
 	int w_suc, fd;
 
@@ -17,19 +17,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(letters);
+	buffer = malloc(sizeof(char) * letters);
 	if (!buffer)
 		return (0);
-	read(fd, buffer, letters);
-	for (i = 0; i < letters; i++, buffer++)
-	{
-		w_suc = write(STDOUT_FILENO, buffer, 1);
-		if (w_suc == -1)
-			return (0);
-		if (*buffer == '\0')
-			break;
-	}
+	nb = read(fd, buffer, letters);
+	w_suc = write(STDOUT_FILENO, buffer, nb);
+	if (w_suc == -1)
+		return (0);
 	close(fd);
 	free(buffer);
-	return (i);
+	return (nb);
 }
