@@ -14,14 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
-
 	fd = open(filename, O_RDONLY);
-
 	if (fd == -1)
 		return (0);
-
 	read(fd, buffer, letters);
-
 	for (i = 0; i < letters; i++, buffer++)
 	{
 		w_suc = write(STDOUT_FILENO, buffer, 1);
@@ -30,6 +26,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (*buffer == '\0')
 			break;
 	}
-
+	close(fd);
 	return (i);
 }
