@@ -29,7 +29,7 @@ int main(void)
 	{
 		tNG = t1G + t2G;
 		tND = t1D + t2D;
-		if (tND > 999999999)
+		if (tND > 9999999999)
 		{
 			tNG++;
 			tND %= 10000000000;
