@@ -73,5 +73,3 @@ Find and print the first 98 Fibonacci numbers `1` and `2` followed by a new line
 * without using the standard library or any other
 * without using `long long`, `malloc`, pointers, arrays/tables or structures
 * without hard coding any Fibonacci number except `1` and `2`
-
-**Doesn't work for number 93 to 98**
