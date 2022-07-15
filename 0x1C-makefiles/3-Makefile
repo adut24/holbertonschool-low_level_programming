@@ -9,15 +9,15 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean: *~ $(NAME)
+clean:
 	$(RM) *~ $(NAME)
 
-oclean: $(OBJ)
+oclean:
 	$(RM) $(OBJ)
 
-fclean: *~ $(NAME) $(OBJ)
+fclean:
 	$(RM) *~ $(NAME) $(OBJ)
 
-re: $(OBJ)
+re:
 	$(RM) $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
