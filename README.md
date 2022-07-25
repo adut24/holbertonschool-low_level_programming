@@ -1,5 +1,5 @@
 # holbertonschool-low_level_programming
-This repository contains 21 projects:
+This repository contains 25 projects:
 * 0x00. C - Hello, World
 * 0x01. C - Variables, if, else, while
 * 0x02. C - Functions, nested loops
@@ -21,6 +21,10 @@ This repository contains 21 projects:
 * 0x13. C - More singly linked lists
 * 0x14. C - Bit manipulation
 * 0x15. C - File I/O
+* 0x17. C - Doubly linked lists
+* 0x18. C - Dynamic libraries
+* 0x1A. C - Hash tables
+* 0x1C. C - Makefiles
 
 ## Learning Objectives
 
@@ -148,3 +152,32 @@ This repository contains 21 projects:
 * What are file permissions, and how to set them when creating a file with the `open` system call
 * What is a system call
 * What is the difference between a function and a system call
+
+### 0x17. C - Doubly linked lists
+* What is a doubly linked list
+* How to use doubly linked lists
+* Start to look for the right source of information without too much help
+
+### 0x18. C - Dynamic libraries
+* What is a dynamic library, how does it work, how to create one, and how to use it
+* What is the environment variable `$LD_LIBRARY_PATH` and how to use it
+* What are the differences between static and shared libraries
+* Basic usage `nm`, `ldd`, `ldconfig`
+
+### 0x1A. C - Hash tables
+* What is a hash function
+* What makes a good hash function
+* What is a hash table, how do they work and how to use them
+* What is a collision and what are the main ways of dealing with collisions in the context of a hash table
+* What are the advantages and drawbacks of using hash tables
+* What are the most common use cases of hash tables
+
+### 0x1C. C - Makefiles
+* What are `make`, Makefiles
+* When, why and how to use Makefiles
+* What are rules and how to set and use them
+* What are explicit and implicit rules
+* What are the most common / useful rules
+* What are variables and how to set and use them
+
+
