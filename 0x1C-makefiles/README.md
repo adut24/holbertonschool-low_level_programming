@@ -73,7 +73,7 @@ Requirements:
 - You are not allowed to have a list of all the `.o` files
 
 ## 5-island_perimeter.py
-Task removed before I could copy the content.
+Task removed before I could copy the instruction.
 
 ## 100-Makefile
 Requirements:
