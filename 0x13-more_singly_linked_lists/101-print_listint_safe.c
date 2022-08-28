@@ -38,6 +38,20 @@ add_t *add_address(add_t **list, const listint_t *new)
 	return (node);
 }
 
+void free_list(add_t **list)
+{
+	add_t *tmp = NULL;
+
+	while((*list))
+	{
+		tmp = (*list)->next;
+		if ((*list)->a)
+			free((listint_t *)(*list)->a);
+		free(*list);
+		*list = tmp;
+	}
+}
+
 /**
  * print_listint_safe - print a linked list
  * @head: linked list
@@ -66,5 +80,6 @@ size_t print_listint_safe(const listint_t *head)
 		head = head->next;
 		nb++;
 	}
+	free_list(&ptr);
 	return (nb);
 }
