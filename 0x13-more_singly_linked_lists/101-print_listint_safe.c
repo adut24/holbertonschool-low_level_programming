@@ -46,7 +46,7 @@ void free_list(add_t **list)
 {
 	add_t *tmp = NULL;
 
-	while((*list))
+	while ((*list))
 	{
 		tmp = (*list)->next;
 		if ((*list)->a)
