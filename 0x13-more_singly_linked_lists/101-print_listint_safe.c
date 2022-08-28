@@ -70,6 +70,8 @@ size_t print_listint_safe(const listint_t *head)
 		exit(98);
 
 	add_address(&ptr, head);
+	printf("[%p] %d\n", (void *)head, head->n);
+	nb++;
 	tmp = ptr;
 	head = head->next;
 	while (head)
