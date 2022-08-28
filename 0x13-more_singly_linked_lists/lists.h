@@ -4,18 +4,6 @@
 #include <stdlib.h>
 
 /**
- * struct address - singly linked list
- * @a: address
- * @next: points to the next node
- * Description: singly linked list node structure
- */
-typedef struct address
-{
-	void *a;
-	struct address *next;
-} add_t;
-
-/**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
@@ -28,6 +16,18 @@ typedef struct listint_s
 	int n;
 	struct listint_s *next;
 } listint_t;
+
+/**
+ * struct address - singly linked list
+ * @a: address
+ * @next: points to the next node
+ * Description: singly linked list node structure
+ */
+typedef struct address
+{
+	const struct listint_s *a;
+	struct address *next;
+} add_t;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
