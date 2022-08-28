@@ -38,6 +38,10 @@ add_t *add_address(add_t **list, const listint_t *new)
 	return (node);
 }
 
+/**
+ * free_list - free the linked list of addresses
+ * @list: linked list
+ */
 void free_list(add_t **list)
 {
 	add_t *tmp = NULL;
