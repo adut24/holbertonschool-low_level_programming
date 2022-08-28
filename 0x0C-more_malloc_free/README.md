@@ -1,12 +1,12 @@
 # 0x0C. C - More malloc, free
 
-## 0-malloc_checked.c
+## [0-malloc_checked.c](./0-malloc_checked.c)
 Write a function that allocates memory using malloc.
 * Prototype: `void *malloc_checked(unsigned int b);`
 * Returns a pointer to the allocated memory
 * If `malloc` fails, the `malloc_checked` function should cause normal process termination with a status value of `98`
 
-## 1-string_nconcat.c
+## [1-string_nconcat.c](./1-string_nconcat.c)
 Write a function that concatenates two strings.
 * Prototype: `char *string_nconcat(char *s1, char *s2, unsigned int n);`
 * The returned pointer shall point to a newly allocated space in memory, which contains `s1`, followed by the first `n` bytes of `s2`, and null terminated
@@ -14,7 +14,7 @@ Write a function that concatenates two strings.
 * If `n` is greater or equal to the length of `s2` then use the entire string `s2`
 * If `NULL` is passed, treat it as an empty string
 
-## 2-calloc.c
+## [2-calloc.c](./2-calloc.c)
 Write a function that allocates memory for an array, using malloc.
 * Prototype: `void *_calloc(unsigned int nmemb, unsigned int size);`
 * The `_calloc` function allocates memory for an array of `nmemb` elements of `size` bytes each and returns a pointer to the allocated memory.
@@ -22,7 +22,7 @@ Write a function that allocates memory for an array, using malloc.
 * If `nmemb` or `size` is `0`, then `_calloc` returns `NULL`
 * If malloc fails, then `_calloc` returns `NULL`
 
-## 3-array_range.c
+## [3-array_range.c](./3-array_range.c)
 Write a function that creates an array of integers.
 * Prototype: `int *array_range(int min, int max);`
 * The array created should contain all the values from `min` (included) to `max` (included), ordered from `min` to `max`
@@ -30,7 +30,7 @@ Write a function that creates an array of integers.
 * If `min` > `max`, return `NULL`
 * If `malloc` fails, return `NULL`
 
-## 100-realloc.c
+## [100-realloc.c](./100-realloc.c)
 Write a function that reallocates a memory block using malloc and free
 * Prototype: `void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);`
 * Where `ptr` is a pointer to the memory previously allocated with a call to `malloc`: `malloc(old_size)`
@@ -43,7 +43,7 @@ Write a function that reallocates a memory block using malloc and free
 * If `new_size` is equal to zero, and `ptr` is not `NULL`, then the call is equivalent to `free(ptr)`. Return `NULL`
 * Don’t forget to free `ptr` when it makes sense
 
-## 101-mul.c
+## [101-mul.c](./101-mul.c)
 Write a program that multiplies two positive numbers.
 * Usage: `mul num1 num2`
 * `num1` and `num2` will be passed in base 10

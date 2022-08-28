@@ -1,11 +1,11 @@
 # 0x10. C - Variadic functions
 
-## 0-sum_them_all.c
+## [0-sum_them_all.c](./0-sum_them_all.c)
 Write a function that returns the sum of all its parameters.
 * Prototype: `int sum_them_all(const unsigned int n, ...);`
 * If `n == 0`, return `0`
 
-## 1-print_numbers.c
+## [1-print_numbers.c](./1-print_numbers.c)
 Write a function that prints numbers, followed by a new line.
 * Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
 * Where `separator` is the string to be printed between numbers
@@ -14,7 +14,7 @@ Write a function that prints numbers, followed by a new line.
 * If `separator` is `NULL`, don’t print it
 * Print a new line at the end of your function
 
-## 2-print_strings.c
+## [2-print_strings.c](./2-print_strings.c)
 Write a function that prints strings, followed by a new line.
 * Prototype: `void print_strings(const char *separator, const unsigned int n, ...);`
 * Where `separator` is the string to be printed between the strings
@@ -24,7 +24,7 @@ Write a function that prints strings, followed by a new line.
 * If one of the string is NULL, print `(nil)` instead
 * Print a new line at the end of your function
 
-## 3-print_all.c
+## [3-print_all.c](./3-print_all.c)
 Write a function that prints anything.
 * Prototype: `void print_all(const char * const format, ...);`
 * Where `format` is a list of types of arguments passed to the function
@@ -41,7 +41,7 @@ Write a function that prints anything.
 * You are allowed to use `printf`
 * Print a new line at the end of your function
 
-## 100-hello_world.asm
+## [100-hello_world.asm](./100-hello_world.asm)
 Write a 64-bit program in assembly that prints `Hello, World`, followed by a new line.
 * You are only allowed to use the system call `write` (use `int` or `syscall`, not a call)
 * Your program will be compiled using `nasm` and `gcc` (as follows)

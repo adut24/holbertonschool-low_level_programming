@@ -1,12 +1,12 @@
 # 0x06. C - More pointers, arrays and strings
 
-## 0-strcat.c
+## [0-strcat.c](./0-strcat.c)
 Write a function that concatenates two strings.
 * Prototype: `char *_strcat(char *dest, char *src);`
 * This function appends the `src` string to the `dest` string, overwriting the terminating null byte (`\0`) at the end of `dest`, and then adds a terminating null byte
 * Returns a pointer to the resulting string `dest`
 
-## 1-strncat.c
+## [1-strncat.c](./1-strncat.c)
 Write a function that concatenates two strings.
 * Prototype: `char *_strncat(char *dest, char *src, int n);`
 * The `_strncat` function is similar to the `_strcat` function, except that
@@ -14,31 +14,31 @@ Write a function that concatenates two strings.
 	* `src` does not need to be null-terminated if it contains `n` or more bytes
 * Return a pointer to the resulting string `dest`
 
-## 2-strncpy.c
+## [2-strncpy.c](./2-strncpy.c)
 Write a function that copies a string.
 * Prototype: `char *_strncpy(char *dest, char *src, int n);`
 * Your function should work exactly like `strncpy`
 
-## 3-strcmp.c
+## [3-strcmp.c](./3-strcmp.c)
 Write a function that compares two strings.
 * Prototype: `int _strcmp(char *s1, char *s2);`
 * Your function should work exactly like `strcmp`
 
-## 4-rev_array.c
+## [4-rev_array.c](./4-rev_array.c)
 Write a function that reverses the content of an array of integers.
 * Prototype: `void reverse_array(int *a, int n);`
 * Where `n` is the number of elements of the array
 
-## 5-string_toupper.c
+## [5-string_toupper.c](./5-string_toupper.c)
 Write a function that changes all lowercase letters of a string to uppercase.
 * Prototype: `char *string_toupper(char *);`
 
-## 6-cap_string.c
+## [6-cap_string.c](./6-cap_string.c)
 Write a function that capitalizes all words of a string.
 * Prototype: `char *cap_string(char *);`
 * Separators of words: space, tabulation, new line, `,`, `;`, `.`, `!`, `?`, `"`, `(`, `)`, `{`, and `}`
 
-## 7-leet.c
+## [7-leet.c](./7-leet.c)
 Write a function that encodes a string into [1337](https://en.wikipedia.org/wiki/Leet).
 * Letters `a` and `A` should be replaced by `4`
 * Letters `e` and `E` should be replaced by `3`
@@ -51,7 +51,7 @@ Write a function that encodes a string into [1337](https://en.wikipedia.org/wiki
 * You are not allowed to use `switch`
 * You are not allowed to use any ternary operation
 
-## 100-rot13.c
+## [100-rot13.c](./100-rot13.c)
 Write a function that encodes a string using [rot13](https://en.wikipedia.org/wiki/ROT13).
 * Prototype: `char *rot13(char *);`
 * You can only use `if` statement once in your code
@@ -61,7 +61,7 @@ Write a function that encodes a string using [rot13](https://en.wikipedia.org/wi
 * You are not allowed to use `switch`
 * You are not allowed to use any ternary operation
 
-## 101-print_number.c
+## [101-print_number.c](./101-print_number.c)
 Write a function that prints an integer.
 * Prototype: `void print_number(int n);`
 * You can only use `_putchar` function to print
@@ -69,7 +69,7 @@ Write a function that prints an integer.
 * You are not allowed to use arrays or pointers
 * You are not allowed to hard-code special values
 
-## 102-magic.c
+## [102-magic.c](./102-magic.c)
 Add one line to [this code](https://github.com/holbertonschool/make_magic_happen/blob/master/magic.c), so that the program prints `a[2] = 98`, followed by a new line.
 * You are not allowed to use the variable `a` in your new line of code
 * You are not allowed to modify the variable `p`
@@ -81,7 +81,7 @@ Add one line to [this code](https://github.com/holbertonschool/make_magic_happen
 * And don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
 * You are allowed to use the standard library
 
-## 103-infinite_add.c
+## [103-infinite_add.c](./103-infinite_add.c)
 Write a function that adds two numbers.
 * Prototype: `char *infinite_add(char *n1, char *n2, char *r, int size_r);`
 * Where `n1` and `n2` are the two numbers
@@ -93,7 +93,7 @@ Write a function that adds two numbers.
 * `n1` and `n2` will never be empty
 * If the result can not be stored in `r` the function must return `0`
 
-## 104-print_buffer.c
+## [104-print_buffer.c](./104-print_buffer.c)
 Write a function that prints a buffer.
 * Prototype: `void print_buffer(char *b, int size);`
 * The function must print the content of `size` bytes of the buffer pointed by `b`
