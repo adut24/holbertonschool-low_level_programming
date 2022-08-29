@@ -41,11 +41,11 @@ int binary_recursion(int *array, size_t left, size_t right, int value)
 
 
 /**
- * @brief
- * @param array
- * @param size
- * @param value
- * @return int
+ * advanced_binary - binary search but search for the first index
+ * @array: array to search
+ * @size: size of the array
+ * @value: value to search
+ * Return: -1 or the first index of the value
  */
 int advanced_binary(int *array, size_t size, int value)
 {
