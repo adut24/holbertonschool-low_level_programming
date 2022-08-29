@@ -12,7 +12,8 @@
  */
 int search_recursion(int *array, int low, int high, size_t size, int value)
 {
-	size_t pos = low + ((double)(high - low) / (array[high] - array[low])) * (value - array[low]);
+	size_t pos = low + ((double)(high - low) / (array[high] - array[low])) *
+	(value - array[low]);
 
 	if (pos > size)
 	{
