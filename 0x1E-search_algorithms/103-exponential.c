@@ -55,9 +55,9 @@ int exponential_search(int *array, size_t size, int value)
 
 	for (i = 1; i < size; i *= 2)
 	{
-		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		if (array[i] >= value)
 			break;
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 	}
 	if (i < size - 1)
 	{
