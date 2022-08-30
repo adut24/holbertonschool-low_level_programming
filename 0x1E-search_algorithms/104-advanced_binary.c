@@ -22,14 +22,14 @@ int binary_recurs(int *array, size_t left, size_t right, int value)
 			printf("%d\n", array[i]);
 	}
 
-	if (left == right)
-		return (-1);
-
 	if (array[mid] == value && value > 0 && array[mid - 1] == value)
 		return (binary_recurs(array, left, mid, value));
 
 	if (array[mid] == value)
 		return (mid);
+
+	if (left == right)
+		return (-1);
 
 	if (array[mid] > value)
 		return (binary_recurs(array, left, mid - 1, value));
