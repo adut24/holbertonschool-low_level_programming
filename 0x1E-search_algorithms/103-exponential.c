@@ -34,7 +34,7 @@ int binary_rec(int *array, size_t left, size_t right, int value)
 	if (array[mid] > value)
 		return (binary_rec(array, 0, mid - 1, value));
 	else
-		return (binary_recursion(array, mid + 1, right, value));
+		return (binary_rec(array, mid + 1, right, value));
 
 	return (-1);
 }
