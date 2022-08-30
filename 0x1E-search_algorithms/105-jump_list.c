@@ -32,7 +32,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		ptr = ptr->next;
 	}
 	if (!ptr->next)
-			printf("Value checked at index [%ld] = [%d]\n", ptr->index, ptr->n);
+		printf("Value checked at index [%ld] = [%d]\n", ptr->index, ptr->n);
 
 	printf("Value found between indexes ");
 	printf("[%ld] and [%ld]\n", check->index, ptr->index);
