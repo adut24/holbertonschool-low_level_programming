@@ -49,8 +49,6 @@ void free_list(add_t **list)
 	while ((*list))
 	{
 		tmp = (*list)->next;
-		if ((*list)->a)
-			free((listint_t *)(*list)->a);
 		free(*list);
 		*list = tmp;
 	}
