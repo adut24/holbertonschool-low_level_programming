@@ -62,12 +62,12 @@ int exponential_search(int *array, size_t size, int value)
 	if (i < size - 1)
 	{
 		printf("Value found between indexes [%ld] and [%ld]\n", i / 2, i);
-		return (binary_recursion(array, i / 2, i, value));
+		return (binary_rec(array, i / 2, i, value));
 	}
 	else
 	{
 		printf("Value found between indexes [%ld] and [%ld]\n", i / 2, size - 1);
-		return (binary_recursion(array, i / 2, size - 1, value));
+		return (binary_rec(array, i / 2, size - 1, value));
 	}
 	return (-1);
 }
