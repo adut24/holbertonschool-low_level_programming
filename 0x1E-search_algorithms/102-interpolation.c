@@ -10,12 +10,12 @@
  * @value: value to search
  * Return: -1 or the index of the value
  */
-int search_recursion(int *array, int low, int high, size_t size, int value)
+int search_recursion(int *array, size_t low, size_t high, int value)
 {
 	size_t pos = low + (((double)(high - low) / (array[high] - array[low])) *
 	(value - array[low]));
 
-	if (pos > size)
+	if (pos > high)
 	{
 		printf("Value checked array[%ld] is out of range\n", pos);
 		return (-1);
@@ -27,9 +27,9 @@ int search_recursion(int *array, int low, int high, size_t size, int value)
 		return (pos);
 
 	if (array[pos] > value)
-		return (search_recursion(array, pos + 1, high, size, value));
+		return (search_recursion(array, pos + 1, high, value));
 	else
-		return (search_recursion(array, low, pos - 1, size, value));
+		return (search_recursion(array, low, pos - 1, value));
 
 	return (-1);
 }
@@ -46,5 +46,5 @@ int interpolation_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	return (search_recursion(array, 0, size - 1, size, value));
+	return (search_recursion(array, 0, size - 1, value));
 }
