@@ -65,7 +65,10 @@ size_t print_listint_safe(const listint_t *head)
 	size_t nb = 0;
 
 	if (!head)
+	{
+		printf("0\n");
 		exit(98);
+	}
 
 	add_address(&ptr, head);
 	printf("[%p] %d\n", (void *)head, head->n);
