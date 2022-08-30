@@ -50,9 +50,5 @@ int binary_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	real = sizeof(*array) / sizeof(array[0]);
-	if (size != real)
-		return (-1);
-
 	return (binary_recursion(array, 0, size - 1, value));
 }
