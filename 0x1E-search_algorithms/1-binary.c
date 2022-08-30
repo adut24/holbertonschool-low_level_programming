@@ -22,11 +22,11 @@ int binary_recursion(int *array, size_t left, size_t right, int value)
 			printf("%d\n", array[i]);
 	}
 
-	if (left == right)
-		return (-1);
-
 	if (array[mid] == value)
 		return (mid);
+
+	if (left == right)
+		return (-1);
 
 	if (array[mid] > value)
 		return (binary_recursion(array, left, mid - 1, value));
