@@ -6,7 +6,6 @@
  * @array: array to search
  * @low: index min
  * @high: index max
- * @size: size of the array
  * @value: value to search
  * Return: -1 or the index of the value
  */
