@@ -48,5 +48,8 @@ int binary_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
+	if (size == 1)
+		return (0);
+
 	return (binary_recursion(array, 0, size - 1, value));
 }
