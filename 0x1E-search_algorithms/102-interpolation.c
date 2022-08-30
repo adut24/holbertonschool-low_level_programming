@@ -11,8 +11,8 @@
  */
 int search_recursion(int *array, size_t low, size_t high, int value)
 {
-	size_t pos = low + ((value - array[low]) * (high - low)
-		/ (array[high] - array[low]));
+	size_t pos = low + (((double)(high - low) / (array[high] - array[low])) *
+	(value - array[low]));
 
 	if (pos > high)
 	{
@@ -29,8 +29,6 @@ int search_recursion(int *array, size_t low, size_t high, int value)
 		return (search_recursion(array, pos + 1, high, value));
 	else
 		return (search_recursion(array, low, pos - 1, value));
-
-	return (-1);
 }
 
 /**
@@ -42,7 +40,7 @@ int search_recursion(int *array, size_t low, size_t high, int value)
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-	if (!array)
+	if (!array || size == 0)
 		return (-1);
 
 	return (search_recursion(array, 0, size - 1, value));
