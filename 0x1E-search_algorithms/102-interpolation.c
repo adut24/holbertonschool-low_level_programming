@@ -15,7 +15,7 @@ int search_recursion(int *array, int low, int high, size_t size, int value)
 	size_t pos = low + (((double)(high - low) / (array[high] - array[low]))
 	* (value - array[low]));
 
-	if (pos > size)
+	if (pos > size - 1)
 	{
 		printf("Value checked array[%ld] is out of range\n", pos);
 		return (-1);
