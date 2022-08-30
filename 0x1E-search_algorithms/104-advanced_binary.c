@@ -32,7 +32,7 @@ int binary_recurs(int *array, size_t left, size_t right, int value)
 		return (-1);
 
 	if (array[mid] > value)
-		return (binary_recurs(array, left, mid - 1, value));
+		return (binary_recurs(array, left, mid, value));
 	else
 		return (binary_recurs(array, mid + 1, right, value));
 
