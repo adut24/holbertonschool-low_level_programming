@@ -45,7 +45,7 @@ int binary_recursion(int *array, size_t left, size_t right, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	if (!array)
+	if (!array || size == 1)
 		return (-1);
 
 	return (binary_recursion(array, 0, size - 1, value));
