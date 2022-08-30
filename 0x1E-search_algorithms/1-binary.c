@@ -32,8 +32,6 @@ int binary_recursion(int *array, size_t left, size_t right, int value)
 		return (binary_recursion(array, left, mid - 1, value));
 	else
 		return (binary_recursion(array, mid + 1, right, value));
-
-	return (-1);
 }
 
 /**
