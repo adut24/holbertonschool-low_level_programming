@@ -28,7 +28,6 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 			ptr = ptr->express;
 		else
 		{
-			printf("Value checked at index [%ld] = [%d]\n", ptr->index, ptr->n);
 			while (ptr->next)
 			{
 				if (ptr->n >= value)
