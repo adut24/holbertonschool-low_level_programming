@@ -25,6 +25,9 @@ int binary_recursion(int *array, size_t left, size_t right, int value)
 	if (left == right)
 		return (-1);
 
+	if (array[mid] == value && value > 0 && array[mid - 1] == value)
+		return (binary_recursion(array, left, mid, value));
+
 	if (array[mid] == value)
 		return (mid);
 
