@@ -82,8 +82,6 @@ Write a function that frees a `listint_t` list.
 * Returns: the size of the list that was free’d
 * The function sets the `head` to `NULL`
 
-**Doesn't work**
-
 ## [103-find_loop.c](./103-find_loop.c)
 Write a function that finds the loop in a linked list.
 * Prototype: `listint_t *find_listint_loop(listint_t *head);`
