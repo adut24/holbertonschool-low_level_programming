@@ -44,5 +44,7 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
+add_t *add_address(add_t **list, const listint_t *new);
+void free_list(add_t **list);
 
 #endif /* LISTS_H */
