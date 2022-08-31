@@ -87,6 +87,7 @@ size_t print_listint_safe(const listint_t *head)
 		head = head->next;
 		nb++;
 	}
+	ptr = tmp;
 	free_list(&ptr);
 	return (nb);
 }
