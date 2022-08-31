@@ -1,6 +1,6 @@
 # 0x1C. C - Makefiles
 
-## 0-Makefile
+## [0-Makefile](./0-Makefile)
 Create your first Makefile.
 
 Requirements:
@@ -9,7 +9,7 @@ Requirements:
 	- The `all` rule builds your executable
 - variables: none
 
-## 1-Makefile
+## [1-Makefile](./1-Makefile)
 Requirements:
 - name of the executable: `school`
 - rules: `all`
@@ -18,7 +18,7 @@ Requirements:
 	- `CC`: the compiler to be used
 	- `SRC`: the ``.c` files
 
-## 2-Makefile
+## [2-Makefile](./2-Makefile)
 Create your first useful Makefile.
 
 Requirements:
@@ -33,7 +33,7 @@ Requirements:
 - The `all` rule should recompile only the updated source files
 - You are not allowed to have a list of all the `.o` files
 
-## 3-Makefile
+## [3-Makefile](./3-Makefile)
 Requirements:
 - name of the executable: `school`
 - rules: `all`, `clean`, `oclean`, `fclean`, `re`
@@ -52,7 +52,7 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 - You are not allowed to have a list of all the `.o` files
 
-## 4-Makefile
+## [4-Makefile](./4-Makefile)
 Requirements:
 - name of the executable: `school`
 - rules: `all`, `clean`, `fclean`, `oclean`, `re`
@@ -72,10 +72,10 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 - You are not allowed to have a list of all the `.o` files
 
-## 5-island_perimeter.py
+## [5-island_perimeter.py](./5-island_perimeter.py)
 Task removed before I could copy the instruction.
 
-## 100-Makefile
+## [100-Makefile](./100-Makefile)
 Requirements:
 - name of the executable: `school`
 - rules: `all`, `clean`, `fclean`, `oclean`, `re`

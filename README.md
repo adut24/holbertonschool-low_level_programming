@@ -1,5 +1,5 @@
 # holbertonschool-low_level_programming
-This repository contains 25 projects:
+This repository contains 26 projects:
 * [0x00. C - Hello, World](./0x00-hello_world/)
 * [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while/)
 * [0x02. C - Functions, nested loops](./0x02-functions_nested_loops/)
@@ -25,6 +25,7 @@ This repository contains 25 projects:
 * [0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
 * [0x1A. C - Hash tables](./0x1A-hash_tables/)
 * [0x1C. C - Makefiles](./0x1C-makefiles/)
+* [0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
 
 ## Learning Objectives
 ### [0x00. C - Hello, World](./0x00-hello_world/)
@@ -181,3 +182,9 @@ This repository contains 25 projects:
 * What are explicit and implicit rules
 * What are the most common / useful rules
 * What are variables and how to set and use them
+
+### [0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
+* What is a search algorithm
+* What is a linear search
+* What is a binary search
+* What is the best search algorithm to use depending on your needs
