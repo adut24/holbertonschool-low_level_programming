@@ -12,7 +12,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *t = NULL;
 	size_t nb = 0;
 
-	if (!h)
+	if (!h || !*h)
 		return (nb);
 
 	add_address(&ptr, *h);
